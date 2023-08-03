@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Incluir os estilos do Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles/styles.css"
+
+    <title></title>
+  </head>
+
+  <body>
+    <div id="menu-container">
+      <button class="botao" onclick="window.location.href='./index.html'">
+        HOME 🏠
+      </button>
+      <button class="botao" onclick="window.location.href='./sobrenos.html'">
+        SOBRE NÓS 🧐
+      </button>
+      <button class="botao" onclick="window.location.href='/produtos.html'">
+        PRODUTOS 🗿
+      </button>
+      <button class="botao" onclick="window.location.href='/parceiros.html'">
+        PARCEIROS 👨🏻‍🤝‍👨🏻
+      </button>
+    </div>
+
+    <h1>ARTEFATOS ANTIGOS DE FONTES DUVIDOSAS</h1>
+
+    <p
+      style="
+        color: var(--cor-destaque);
+        font-family: Helvetica;
+        font-size: large;
+      "
+    >
+      <em>
+        Nós temos os melhores tapetes, livros, artigos no geral encontrados
+        legalmente em países de terceiro mundo confia.
+      </em>
+    </p>
+
+    <!-- Adicionar o swiper slide -->
+    <div class="swiper-container" style="text-align: center">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            class="imagem-slide"
+            height="380"
+            width="600"
+            src="https://images.ctfassets.net/cnu0m8re1exe/hfF30TQiZHCmCRnzTXXNo/969e0ea47b5958ea6db0147d89baba01/23785641449_afdaafc4ba_k.jpg"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="imagem-slide"
+            height="380"
+            width="600"
+            src="https://cdn.sci.news/images/enlarge3/image_4107_1e-Hala-Sultan-Tekke.jpg"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="imagem-slide"
+            height="380"
+            width="600"
+            src="https://www.archaeology.wiki/wp-content/uploads/2019/10/Grevena_1.jpg"
+            alt="Slide 3"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="imagem-slide"
+            height="380"
+            width="600"
+            src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-paracas-ceramics-peru.jpg?w=1600&h=900"
+            alt="Slide 4"
+          />
+        </div>
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+
+      <!-- Navegação e paginação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Incluir a biblioteca Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      // Inicializar o swiper slide
+      var swiper = new Swiper(".swiper-container", {
+        // Configurações do swiper
+        // Por exemplo, você pode definir a direção do slide, a velocidade, o modo de paginacão, etc.
+        // Veja a documentação do Swiper.js para mais opções de configuração: https://swiperjs.com/api/
+        loop: true, // Permite que os slides fiquem em loop infinito
+        slidesPerView: 1, // Quantidade de slides visíveis na tela
+        spaceBetween: 20, // Espaçamento entre os slides
+        navigation: {
+          nextEl: ".swiper-button-next", // Elemento para avançar para o próximo slide
+          prevEl: ".swiper-button-prev", // Elemento para voltar ao slide anterior
+        },
+        pagination: {
+          el: ".swiper-pagination", // Elemento para a paginacão dos slides (pontos indicando o número de slides)
+        },
+      });
+    </script>
+  </body>
+</html>
